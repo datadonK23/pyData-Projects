@@ -1,0 +1,21 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="binned_distance <= 0.5\nsamples = 100.0%\nvalue = [0.43, 0.57]\nclass = y[1]", fillcolor="#399de53d"] ;
+1 [label="48.6%\n[0.56, 0.44]\ny[0]", fillcolor="#e5813933"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="binned_distance <= 2.5\n51.4%\n[0.32, 0.68]\ny[1]", fillcolor="#399de589"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="binned_distance <= 1.5\n27.0%\n[0.4, 0.6]\ny[1]", fillcolor="#399de555"] ;
+2 -> 3 ;
+5 [label="buzzwordy_title <= 0.5\n21.6%\n[0.25, 0.75]\ny[1]", fillcolor="#399de5aa"] ;
+3 -> 5 ;
+7 [label="13.5%\n[0.0, 1.0]\ny[1]", fillcolor="#399de5ff"] ;
+5 -> 7 ;
+8 [label="8.1%\n[0.67, 0.33]\ny[0]", fillcolor="#e581397f"] ;
+5 -> 8 ;
+6 [label="5.4%\n[1.0, 0.0]\ny[0]", fillcolor="#e58139ff"] ;
+3 -> 6 ;
+4 [label="24.3%\n[0.22, 0.78]\ny[1]", fillcolor="#399de5b6"] ;
+2 -> 4 ;
+}
