@@ -1,6 +1,8 @@
 # Do not Sync - Privacy
 **/data/events*
 
+# PyCharm
+.idea/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

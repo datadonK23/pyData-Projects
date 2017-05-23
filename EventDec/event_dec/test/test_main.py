@@ -1,8 +1,9 @@
 import unittest
-from project import main #FIXME
+from event_dec import main
 
 class MainTests(unittest.TestCase):
-    #FIXME
+    def __init__(self):
+        pass
 
 def main():
     unittest.main()
