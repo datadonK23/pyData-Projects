@@ -1,7 +1,7 @@
 # EventDec
 By providing some information about an event, app predicts if registration is recommended.
 
-This simple prototype app helps to make decision, if registration to an event is recommended. By providing three inputs ("Title", "Is the main topic data" and "Distance to location"), it predicts if it's worth to participate. It uses a decision tree classifier to make a binary prediction ("worth attending"|"not worth attending"). The model uses a self labeled dataset of prior attended events for training and testing. As an intended side-effect, a simple heuristic arose from the final model: "If event is located in central-region of Upper Austria, it is probably not worth attending. If the location is further away than Vienna, it is probably worth attending. And for in-between location, check if the title is buzzwordy and if the main topic of event has something to do with data."
+This simple prototype app helps to make decision, if registration to an event is recommended. By providing three inputs ("Title", "Is the main topic data" and "Distance to location"), it predicts if it's worth to participate. It uses a decision tree classifier to make a binary prediction ("worth attending"|"not worth attending"). The model uses a self labeled dataset of prior attended events for training and testing. Due to expected limitations, the model performs poor (see model evaluation in modeling notebook) - nevertheless, at least better than a flip of coin ;) But, as an intended side-effect, a simple heuristic arose from the final model: "If event is located in central-region of Upper Austria, it is probably not worth attending. If the location is further away than Vienna, it is probably worth attending. And for locations in-between, check if the title is buzzwordy."
 
 More informations in project briefing: `BRIEFING.md`
 
@@ -25,15 +25,20 @@ Start app with `python event_dec/main.py` (or `cd` into `event_dec/`-directory a
         * `test_main.py`
         * `test_model.py`
     * `notebook/` _(nb exploration & model development)_
-        * `1_exploration.ipynb`
+        * `0_Cleaning.ipynb`
+        * `1_Exploration.ipynb`
+        * `2_Modeling.ipynb`
         * `helpers/`
             * `__init__.py`
-        * `plots/` _(nb plots)
+        * `plots/` _(nb plots)_
+            * `...`
     * `data/` _(data directory)_
         * `REFS.md`
+        * `...`
 * `docs/` _(documentation & research content)_
     * `research_docs/`
         * `REFS.md`
+        * `...`
 * `LICENSE`
 
 # License
