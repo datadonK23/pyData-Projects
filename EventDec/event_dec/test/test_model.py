@@ -7,11 +7,16 @@ from event_dec.model import Model
 
 class ModelTests(unittest.TestCase):
 
-    @patch.object(event_dec.main.clean_input, "input", create=True)
+    @patch.object(event_dec.main.process_input, "input", create=True)
     def test_predict(self, input):
+        """
+        Test return type and edge cases
+        """
         input.return_value = input_attend = np.array([[0, 1, 4]])
         input.return_value = input_notattend = np.array([[1, 0, 0]])
         model = Model()
+
+        self.assertEqual(np.ndarray, type(model.predict(input=input_attend)), "Returns np ndarray")
 
         self.assertIsNotNone(model.predict(input=input_notattend), "Returns not None")
 

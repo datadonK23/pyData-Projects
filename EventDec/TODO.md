@@ -9,5 +9,5 @@
 [x] Prepocessing
 [x] Exploration
 [x] Modeling
-[ ] App Dev
-[ ] Cleanup and Communication
+[x] App Dev
+[x] Cleanup and Communication
