@@ -8,15 +8,18 @@ Dashboard of blood pressure measures
 
 
 ## Project Goal
-Dashboard should visualize and provide some analytics of blood pressure measures. 
+Dashboard should visualize and provide some analytics of blood pressure measures.
 
 
 ## Metrices
-* \#TODO
+* Personal usability of report (measured with self-X)
 
 
 ## Termination Strategy
-Project will terminate, if... \#TODO
+Project will terminate, if...
+
+* Jupyter Dashboard doesn't work (maybe refactor to Dash)
+* Expected finish after appointment with Internist
 
 
 ## Target Group
@@ -28,18 +31,18 @@ Project will terminate, if... \#TODO
 
 
 ### Benchmark
-* \#TODO
+* Fever chart in patient maps at hospital
 
 
 ## Data Management
 * Provenance => `project/data/REFS.md`
-* Persistence => Filebased
+* Persistence => filebased (.csv)
 
 
 ## Technologies
 * Processing => PyData Stack based on Anaconda. Libraries:
     * `environment.yml`
-* Visualization => \#FIXME
+* Visualization => Matplotlib
 
 
 ## Test Strategy

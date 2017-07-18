@@ -8,5 +8,8 @@
 
 
 ## Other
+[x] Refactor Viz (combine blood pressure and pulse)
+[ ] Stats pulse vals
 [ ] Viz per week
+[ ] Stats per week
 [ ] Layout
