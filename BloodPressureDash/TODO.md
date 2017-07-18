@@ -4,12 +4,13 @@
 [x] Try Jupyter Dashboards
 [x] Viz values (blood pressure)
 [x] Viz values (pulse)
-[ ] Stats
+[x] Stats
 
 
 ## Other
 [x] Refactor Viz (combine blood pressure and pulse)
-[ ] Stats pulse vals
-[ ] Viz per week
-[ ] Stats per week
+[x] Stats pulse vals
+[x] Viz per week
+[x] Stats per week
+[ ] Additional metrices
 [ ] Layout

@@ -7,7 +7,7 @@ More informations in project briefing: `BRIEFING.md`
 Rename environment name in yml, run `conda env create -f environment.yml` and `source activate env_BloodPressure`
 
 # App Entry Point
-`cd blood_pressure_dash` and start Jupyter with `jupyter notebook`
+`cd blood_pressure_dash` and start Jupyter with `jupyter notebook`. Eventually install and enable `Python Markdown` extension in Jupyter beforehand. 
 
 # Project Structure
 * `README.md`

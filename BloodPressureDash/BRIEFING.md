@@ -4,7 +4,7 @@
 # BloodPressureDash
 Dashboard of blood pressure measures
 
-\#TODO $DESCRIPTION
+Dashboard presents a report of blood pressure and pulse values, collected with blood pressure monitor. Its purpose is to control actual hypertension therapy and also the process of stopping the medication after few weeks.
 
 
 ## Project Goal
@@ -24,10 +24,11 @@ Project will terminate, if...
 
 ## Target Group
 * Self-use
+* Internist
 
 
 ## Research
-* \#TODO
+* Googeling standard values
 
 
 ### Benchmark
@@ -57,5 +58,6 @@ Usability: Self-testing of dashboard.
 * Actual finish => \#TODO
 
 ## Limitations / Further Improvements
-* Frontend: Input
-* \#TODO
+* Frontend: Automate input
+* Large number of observations will decrease usability. Too many weekly visualizations for single page
+* ATM pdf export doesn't work well with Jupyter Dashboard
