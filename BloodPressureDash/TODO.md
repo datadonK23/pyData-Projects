@@ -12,5 +12,5 @@
 [x] Stats pulse vals
 [x] Viz per week
 [x] Stats per week
+[x] Layout
 [ ] Additional metrices
-[ ] Layout

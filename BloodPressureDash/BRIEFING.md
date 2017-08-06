@@ -44,6 +44,7 @@ Project will terminate, if...
 * Processing => PyData Stack based on Anaconda. Libraries:
     * `environment.yml`
 * Visualization => Matplotlib
+* Reporting => Jupyter Dashboard
 
 
 ## Test Strategy
@@ -55,7 +56,8 @@ Usability: Self-testing of dashboard.
 ## Timetable
 * Start => 16.07.2017
 * Expected finish => 03.08.2017
-* Actual finish => \#TODO
+* Actual finish => 06.08.2017
+
 
 ## Limitations / Further Improvements
 * Frontend: Automate input
