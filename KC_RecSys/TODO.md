@@ -1,7 +1,7 @@
 # TODO
 
 ## Priority
-[ ] Environment
+[x] Environment
 [ ] Doc
 [ ] Data
 [ ] Evaluation metrices
