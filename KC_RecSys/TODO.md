@@ -1,7 +1,12 @@
 # TODO
 
 ## Priority
-[ ] #FIXME
+[ ] Environment
+[ ] Doc
+[ ] Data
+[ ] Evaluation metrices
+[ ] Models
+[ ] Evaluation
 
 
 ## Other
