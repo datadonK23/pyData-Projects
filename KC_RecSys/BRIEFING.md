@@ -12,11 +12,14 @@ Show different approaches for recommendation system
 
 
 ## Metrices
-* \#TODO
+* Accuracy of ratings, measured with RMSE and MAE
 
 
 ## Termination Strategy
-Project will terminate, if... \#TODO
+Project will terminate, if...
+
+* Lack of time
+* Surprise lib unusable
 
 
 ## Target Group
@@ -24,40 +27,42 @@ Project will terminate, if... \#TODO
 
 
 ## Research
-* \#TODO
+* [Surprise Docs](http://surprise.readthedocs.io/en/stable/)
 
 
 ### Benchmark
-* \#TODO
+* Baseline model, which predicts ratings based on distribution of data in trainset
 
 
 ## Data Management
 * Provenance => `project/data/REFS.md`
-* Architecture => \#TODO
-* Persistence => \#TODO 
+* Persistence => file based (CSV)
 
 
 ## Technologies
 * Processing => PyData Stack based on Anaconda. Libraries:
     * `environment.yml`
-* Modeling => scikit-learn \#FIXME
-* IO => \#FIXME
+* Dissemination => Jupyter notebook
+* Modeling => scikit-surprise
 
 
 ## Test Strategy
 Model Testing:
 
-* \#FIXME
+* Assertions to ensure right data formats
+* K-fold validation of models
+* Accuracy evaluation of final model (using RMSE)
 
 App Testing:
 
-* \#FIXME
+* Nothing (no app)
 
 
 ## Timetable
 * Start => 29.03.2018
 * Expected finish => 29.04.2018
-* Actual finish => \#TODO
+* Actual finish => 03.04.2018
 
 ## Limitations / Further Improvements
-* \#TODO
+* Uses randomly generated data -> real world data needed
+* Only model-based collaborative filtering techniques used - memory-based worth a try, but this wouldn't be a scalable approach

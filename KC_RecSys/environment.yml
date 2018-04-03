@@ -13,11 +13,13 @@ dependencies:
   - cffi=1.11.5=py36h9745a5d_0
   - chardet=3.0.4=py36h0f667ec_1
   - cryptography=2.2.1=py36h14c3975_0
+  - cycler=0.10.0=py36h93f1223_0
   - dbus=1.12.2=hc3f9b76_1
   - decorator=4.2.1=py36_0
   - docutils=0.14=py36hb0f60f5_0
   - entrypoints=0.2.3=py36h1aec115_2
   - expat=2.2.5=he0dffb1_0
+  - faker=0.8.6=py36h14e001f_0
   - fontconfig=2.12.6=h49f89f6_0
   - freetype=2.8=hab7d2ae_1
   - glib=2.53.6=h5d9569c_2
@@ -42,6 +44,7 @@ dependencies:
   - jupyter_client=5.2.3=py36_0
   - jupyter_console=5.2.0=py36he59e554_1
   - jupyter_core=4.4.0=py36h7c827e3_0
+  - kiwisolver=1.0.1=py36h764f252_0
   - libedit=3.1=heed3624_0
   - libffi=3.2.1=hd88cf55_4
   - libgcc-ng=7.2.0=hdf63c60_3
@@ -52,6 +55,7 @@ dependencies:
   - libxcb=1.12=hcd93eb1_4
   - libxml2=2.9.7=h26e45fe_0
   - markupsafe=1.0=py36hd9260cd_1
+  - matplotlib=2.2.2=py36h0e671d2_0
   - mistune=0.8.3=py36_0
   - mkl=2018.0.2=1
   - mkl_fft=1.0.1=py36h3010b51_0
@@ -102,6 +106,7 @@ dependencies:
   - sqlite=3.22.0=h1bed415_0
   - terminado=0.8.1=py36_1
   - testpath=0.3.1=py36h8cadb63_0
+  - text-unidecode=1.2=py36_0
   - tk=8.6.7=hc745277_3
   - tornado=5.0=py36_0
   - traitlets=4.3.2=py36h674d592_0

@@ -2,11 +2,11 @@
 
 ## Priority
 [x] Environment
-[ ] Doc
-[ ] Data
-[ ] Evaluation metrices
-[ ] Models
-[ ] Evaluation
+[x] Doc
+[x] Data
+[x] Evaluation metrices
+[x] Models
+[x] Evaluation
 
 
 ## Other

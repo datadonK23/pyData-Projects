@@ -7,33 +7,28 @@ More informations in project briefing: `BRIEFING.md`
 Rename environment name in yml, run `conda env create -f environment.yml` and `source activate $ENVNAME`
 
 # App Entry Point
-Start app with `python event_dec/main.py` (or `cd` into `event_dec/`-directory and run `python main.py`)
+`cd` into `project/notebook/`-directory, run `jupyter notebook` and choose `Recommenders.ipynb`-notebook
 
 # Project Structure
 * `README.md`
 * `BRIEFING.md` _(project briefing)_
 * `TODO.md`
 * `environment.yml`
-* `project/` _#TODO rename_
+* `project/`
     * `__init__.py`
-    * `main.py` _(entry point)_
-    * `model.py`
-    * `test/` _(test directory)_
-        * `__init__.py`
-        * `test_main.py`
-        * `test_model.py`
     * `notebook/` _(notebooks for exploration & model development)_
-        * `0_Cleaning.ipynb`
-        * `1_Exploration.ipynb`
-        * `2_Modeling.ipynb`
+        * `Petdata_generator.ipynb` _(generates random dataset)_
+        * `Recommenders.ipynb` _(__main notebook__: Try different recommenders)_
         * `helpers/`
             * `__init__.py`
         * `plots/`
-            * `...` 
+            * `__init__.py`
+            * `ratings.png`
     * `data/` _(data directory)_
         * `REFS.md`
-        * * `...`
+        * `petdata_1000_100.csv`
 * `docs/` _(documentation & research content)_
+    * `info.md`
     * `research_docs`
     * * `...`
 * `LICENSE`
