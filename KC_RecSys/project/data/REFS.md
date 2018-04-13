@@ -10,3 +10,24 @@ Datasets:
     * 3 - 3 stars (mediocre)
     * 4 - 4 stars
     * 5 - 5 stars (excellent)
+* ai_docs_1000.json - References papers about AI, scraped from arXiv on 2018-04-13. N=1000. Fields:
+    * authors
+    * title
+    * date
+    * category
+    * url
+    * summary
+* db_docs_1000.json - References papers about databases, scraped from arXiv on 2018-04-13. N=1000. Fields:
+    * authors
+    * title
+    * date
+    * category
+    * url
+    * summary
+* ml_docs_1000.json - References papers about ML, scraped from arXiv on 2018-04-13. N=1000. Fields:
+    * authors
+    * title
+    * date
+    * category
+    * url
+    * summary
