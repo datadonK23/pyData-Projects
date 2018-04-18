@@ -10,4 +10,4 @@
 
 
 ## Other
-[ ] #FIXME
+[ ] Switch to binary encoding of ratings
