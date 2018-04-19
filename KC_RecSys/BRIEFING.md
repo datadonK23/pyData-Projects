@@ -59,9 +59,17 @@ App Testing:
 
 
 ## Timetable
+5 Star Rating:
+
 * Start => 29.03.2018
 * Expected finish => 29.04.2018
 * Actual finish => 03.04.2018
+
+Binary Rating:
+
+* Start => 17.04.2018
+* Expected finish => 20.04.2018
+* Actual finish => 19.04.2018
 
 ## Limitations / Further Improvements
 * Uses randomly generated data -> real world data needed
