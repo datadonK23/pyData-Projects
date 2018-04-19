@@ -35,8 +35,9 @@ Rename environment name in yml, run `conda env create -f environment.yml` and `s
         * `ml_docs_1000.json`
 * `docs/` _(documentation & research content)_
     * `info.md`
-    * `research_docs`
-    * * `...`
+    * `research_docs/`
+        * `SalakhutdinovMnih_2008_matrix-factorization.pdf`
+        * `ZhangWandFordMakedon_1996_NMF.pdf`
 * `LICENSE`
 
 # License
