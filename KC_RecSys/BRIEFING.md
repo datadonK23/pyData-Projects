@@ -69,7 +69,7 @@ Binary Rating:
 
 * Start => 17.04.2018
 * Expected finish => 20.04.2018
-* Actual finish => 
+* Actual finish => 19.04.2018
 
 ## Limitations / Further Improvements
 * Uses randomly generated data -> real world data needed

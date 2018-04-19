@@ -10,4 +10,4 @@
 
 
 ## Other
-[ ] Switch to binary encoding of ratings
+[x] Switch to binary encoding of ratings
