@@ -7,7 +7,9 @@ Date: 24.10.18
 
 import unittest
 
-from preprocessing import TextWrangler, load_corpus
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+from preprocessing import TextWrangler, load_corpus, tfidf_vectorizer
 
 
 class TestTextWrangler(unittest.TestCase):
@@ -62,9 +64,17 @@ class TestInput(unittest.TestCase):
         corpus = load_corpus("data/")
 
         self.assertEqual(len(corpus.data), 60,
-                         "Wrong number of documents loaded.")
+                         "Wrong number of documents loaded")
 
 
+class TestVectorizer(unittest.TestCase):
+    def test_tfidf_vectorizer(self):
+        vectorizer = tfidf_vectorizer()
+
+        self.assertEqual(type(vectorizer), TfidfVectorizer,
+                         "Vectorizer does not return tfidf vectorizer object")
+        self.assertFalse(hasattr(vectorizer, "vocabulary_"),
+                         "Tfidf object should be untrained, but has vocab")
 
 
 if __name__ == '__main__':

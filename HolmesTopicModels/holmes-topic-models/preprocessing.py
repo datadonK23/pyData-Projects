@@ -12,6 +12,7 @@ import unicodedata
 
 from sklearn.datasets import load_files
 from sklearn.feature_extraction import stop_words
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 import nltk
 nltk.download(["punkt", "wordnet"], download_dir="nltk/")
@@ -85,3 +86,14 @@ def load_corpus(path):
     raw_corpus = load_files(path)
 
     return raw_corpus
+
+
+def tfidf_vectorizer():
+    """ Initializes tfidf vectorizer
+
+    :return: TfidfVectorizer object
+    """
+    tfidf = TfidfVectorizer(strip_accents="ascii",
+                            tokenizer=TextWrangler(kind="stem"))
+
+    return tfidf
