@@ -7,7 +7,7 @@ Date: 24.10.18
 
 import unittest
 
-from preprocessing import TextWrangler
+from preprocessing import TextWrangler, load_corpus
 
 
 class TestTextWrangler(unittest.TestCase):
@@ -55,6 +55,17 @@ class TestTextWrangler(unittest.TestCase):
                          "False tokenization by stem wrangler")
         self.assertEqual(testcase_lemma, expected_lemma,
                          "False tokenization by stem wrangler")
+
+
+class TestInput(unittest.TestCase):
+    def test_load_corpus(self):
+        corpus = load_corpus("data/")
+
+        self.assertEqual(len(corpus.data), 60,
+                         "Wrong number of documents loaded.")
+
+
+
 
 if __name__ == '__main__':
     unittest.main()

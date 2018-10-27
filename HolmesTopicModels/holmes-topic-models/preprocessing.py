@@ -10,6 +10,7 @@ Date: 24.10.18
 import re
 import unicodedata
 
+from sklearn.datasets import load_files
 from sklearn.feature_extraction import stop_words
 
 import nltk
@@ -25,7 +26,7 @@ class TextWrangler(object):
 
     Tokenize documents. Removes punctuation and stopwords.
     Converts tokens to lowercase. Replaces numbers with generic number token.
-    Depending on `kind` paramter, stems or lemmatizes tokens.
+    Depending on `kind` parameter, stems or lemmatizes tokens.
 
     Parameters
     ----------
@@ -73,3 +74,14 @@ class TextWrangler(object):
 
     def is_number(self, token):
         return bool(re.match(r"\d+", token))
+
+
+def load_corpus(path):
+    """ Loads corpus from specified directory.
+
+    :param path: String - directory
+    :return: raw_corpus : Bunch - object of documents
+    """
+    raw_corpus = load_files(path)
+
+    return raw_corpus
