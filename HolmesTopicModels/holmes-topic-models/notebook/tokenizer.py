@@ -13,8 +13,8 @@ import unicodedata
 from sklearn.feature_extraction import stop_words
 
 import nltk
-nltk.download(["punkt", "wordnet"], download_dir="nltk/")
-nltk.data.path.append("nltk/")
+nltk.download(["punkt", "wordnet"], download_dir="../nltk/")
+nltk.data.path.append("../nltk/")
 from nltk import wordpunct_tokenize
 from nltk.stem.lancaster import LancasterStemmer
 from nltk.stem.wordnet import WordNetLemmatizer
