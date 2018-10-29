@@ -40,7 +40,8 @@ class TextWrangler(object):
         self.lemmatizer = WordNetLemmatizer()
         sklearn_stopwords = stop_words.ENGLISH_STOP_WORDS
         custom_stopwords = ["arthur", "conan", "doyle", "chapter", "contents",
-                            "said", '`--"', "`"]
+                            "mr", "holmes", "watson",
+                            '`--"', "`"]
         self.stopwords = sklearn_stopwords.union(custom_stopwords)
 
     def __call__(self, document):
