@@ -13,9 +13,10 @@ import unicodedata
 from sklearn.feature_extraction import stop_words
 
 import nltk
-nltk.download(["punkt", "wordnet"], download_dir="../nltk/")
+nltk.download(["punkt", "stopwords", "wordnet"], download_dir="../nltk/")
 nltk.data.path.append("../nltk/")
 from nltk import wordpunct_tokenize
+from nltk.corpus import stopwords
 from nltk.stem.lancaster import LancasterStemmer
 from nltk.stem.wordnet import WordNetLemmatizer
 
@@ -38,11 +39,13 @@ class TextWrangler(object):
         self.kind = kind
         self.stemmer = LancasterStemmer()
         self.lemmatizer = WordNetLemmatizer()
+        nltk_stopwords = set(stopwords.words("english"))
         sklearn_stopwords = stop_words.ENGLISH_STOP_WORDS
         custom_stopwords = ["arthur", "conan", "doyle", "chapter", "contents",
-                            "mr", "holmes", "watson",
+                            "holmes", "watson", "said", "man", "mr",
                             '`--"', "`"]
-        self.stopwords = sklearn_stopwords.union(custom_stopwords)
+        self.stopwords = sklearn_stopwords.union(nltk_stopwords).union(
+            custom_stopwords)
 
     def __call__(self, document):
         if self.kind == "lemma":

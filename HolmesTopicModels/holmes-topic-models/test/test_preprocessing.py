@@ -63,7 +63,7 @@ class TestInput(unittest.TestCase):
     def test_load_corpus(self):
         corpus = load_corpus("data/")
 
-        self.assertEqual(len(corpus.data), 60,
+        self.assertEqual(len(corpus.data), 56,
                          "Wrong number of documents loaded")
 
 
