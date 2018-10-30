@@ -4,11 +4,11 @@
 # HolmesTopicModels
 Topic Models of Sherlock Holmes stories.
 
-In this project different approaches to Topic Modeling are compared. [Latent Dirichlet Allocation (LDA)](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation), [Latent Semantic Analysis (LSA)](https://en.wikipedia.org/wiki/Latent_semantic_analysis) and [Non-Negative Matrix Factorization (NNMF)](https://en.wikipedia.org/wiki/Non-negative_matrix_factorization) are applied on a corpus, which consists of stories of the famous [Sherlock Holmes](https://en.wikipedia.org/wiki/Sherlock_Holmes) series by Arthur Conan Doyle.
+In this project different approaches to Topic Modeling are compared. [Latent Dirichlet Allocation (LDA)](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation), [Latent Semantic Analysis (LSA)](https://en.wikipedia.org/wiki/Latent_semantic_analysis) and [Non-Negative Matrix Factorization (NNMF)](https://en.wikipedia.org/wiki/Non-negative_matrix_factorization) are applied on a corpus, which consists of stories of the famous [Sherlock Holmes](https://en.wikipedia.org/wiki/Sherlock_Holmes) series by Arthur Conan Doyle. The research goal is in finding a new assignment scheme for stories to collections based on the topic models. This scheme should then be compared to the original collections in the Sherlock Holmes canon.
 
 
 ## Project Goal
-Apply LDA, LSI and NNMF on Sherlock Holmes stories corpus and compare the results.
+Apply LDA, LSI and NNMF on Sherlock Holmes stories corpus and compare the results. Find a new assignment of stories to collections.
 
 
 ## Metrices
@@ -20,6 +20,7 @@ Project will terminate, if...
 
 * Lack of time
 * Data can not be acquired
+* Topics are uninterpretable
 
 
 ## Target Group
