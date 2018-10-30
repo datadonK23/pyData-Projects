@@ -5,5 +5,4 @@ Texts from Sherlock Holmes canon by Sir Arthur Conan Doyle. Downloaded from [she
 
 Corpus:
 
-* `novels/` - 4 novels
 * `stories/`- 56 stories
