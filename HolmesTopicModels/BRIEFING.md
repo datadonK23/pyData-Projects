@@ -27,9 +27,10 @@ Project will terminate, if...
 * Data professional audience
 
 
-## Research
+## References
 * [Applied Text Analysis with Python](http://shop.oreilly.com/product/0636920052555.do) by Benjamin Bengfort, Rebecca Bilbro, Tony Ojeda [2018]
 * [Latent Dirichlet Allocation](http://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf) by David Blei, Andrew Ng, Michael Jordan [2003]
+* [LDA in Python – How to grid search best topic models?](https://www.machinelearningplus.com/nlp/topic-modeling-python-sklearn-examples/)
 
 
 ### Benchmark
@@ -45,9 +46,8 @@ Project will terminate, if...
 ## Technologies
 * Processing => PyData Stack based on Anaconda. Libraries:
     * `environment.yml`
-* Modeling => scikit-learn \#FIXME
-* IO => \#FIXME
-
+* Modeling => scikit-learn
+* IO => Jupyter, Yellowbrick, pyLDAvis
 
 ## Test Strategy
 Model Testing:
@@ -66,4 +66,5 @@ App Testing:
 * Actual finish => \#TODO
 
 ## Limitations / Further Improvements
+* Novel collection sequences can be learned by RNN
 * \#TODO

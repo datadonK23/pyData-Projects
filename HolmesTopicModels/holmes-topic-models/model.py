@@ -1,35 +1,40 @@
 #!/usr/bin/python
 """ model
 
-#FIXME Description
+Model and pipeline building
 
 Author: datadonk23
 Date: 23.10.18 
 """
-import os
 
-from sklearn.externals import joblib
+from sklearn.pipeline import Pipeline
+from sklearn.decomposition import NMF
 
 
-class Model:
+def make_model(n_topics=5):
+    """ Creates sklearn NMF model
+
+    :param n_topics: number of topics
+    :return: model object
     """
-        Trained model: #FIXME
-        Methods:
-            predict(input) - predicts target class based on given input
+    model = NMF(n_components=n_topics,
+                solver="mu", beta_loss="kullback-leibler", alpha=0.1,
+                random_state=23)
+
+    return model
+
+
+def make_pipeline(tfidf_vectorizer, model):
+    """ Creates sklearn NLP pipeline
+
+    :param vectorizer: Vectorizer object
+    :param model: Model object
+    :return: Pipeline object
     """
+    tfidf_vectorizer = tfidf_vectorizer
+    model = model
 
-    def __init__(self):
-        actual_filepath = os.path.dirname(os.path.realpath(__file__))
-        # model_file = os.path.join(actual_filepath, "data/model_trained.pkl")
-        # self.trained_model = joblib.load(model_file)
+    pipeline = Pipeline([("tfidf", tfidf_vectorizer),
+                         ("nmf", model)])
 
-    def predict(self, input):
-        """
-        Predicts target class based on given input
-        :param input: #FIXME
-        :return: #FIXME
-        """
-        pred = self.trained_model.predict(input)
-
-        return pred
-
+    return pipeline
