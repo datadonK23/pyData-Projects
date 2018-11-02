@@ -9,7 +9,8 @@ import unittest
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from preprocessing import TextWrangler, load_corpus, tfidf_vectorizer
+from preprocessing import TextWrangler, Collections, load_corpus, \
+    tfidf_vectorizer
 
 
 class TestTextWrangler(unittest.TestCase):
@@ -75,6 +76,24 @@ class TestVectorizer(unittest.TestCase):
                          "Vectorizer does not return tfidf vectorizer object")
         self.assertFalse(hasattr(vectorizer, "vocabulary_"),
                          "Tfidf object should be untrained, but has vocab")
+
+
+class TestCollections(unittest.TestCase):
+    def test_original(self):
+        collection = Collections().original
+
+        self.assertEqual(type(collection), dict,
+                         "Original collection is not a dict")
+        self.assertEqual(len(collection), 5,
+                             "Original collection has false size")
+
+    def test_novel(self):
+        collection = Collections().novel
+
+        self.assertEqual(type(collection), dict,
+                         "Novel collection is not a dict")
+        self.assertEqual(len(collection), 5,
+                         "Novel collection has false size")
 
 
 if __name__ == '__main__':

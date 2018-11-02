@@ -30,19 +30,7 @@ def main():
 
 
 
-    # collections_map = {0: "His Last Bow",
-    #                    1: "The Adventures of Sherlock Holmes",
-    #                    2: "The Case-Book of Sherlock_Holmes",
-    #                    3: "The Memoirs of Sherlock Holmes",
-    #                    4: "The Return of Sherlock Holmes"}
     #
-    # # Titles created from dominant words in topics
-    # novel_collections_map = {
-    #     0: "The Whispering Ways Sherlock Holmes Waits to Act on Waste",
-    #     1: "Vengeful Wednesdays: Unexpected Incidences on the Tapering Train by Sherlock Holmes",
-    #     2: "A Private Journey of Sherlock Holmes: Thirteen Unfolded Veins on the Move",
-    #     3: "Sherlock Holmes Tumbling into the hanging arms of Scylla",
-    #     4: "The Shooking Jaw of Sherlock Holmes in the Villa of the Baronet"}
     #
     # print("Novel Sherlock Holmes Short Stories Collections:")
     # for _, title in novel_collections_map.items():

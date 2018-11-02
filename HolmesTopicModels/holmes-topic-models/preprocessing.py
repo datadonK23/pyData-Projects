@@ -101,3 +101,44 @@ def tfidf_vectorizer():
                             tokenizer=TextWrangler(kind="stem"))
 
     return tfidf
+
+
+class Collections(object):
+    """ Collection of stories.
+
+    Provide maps of collection titles and encodings.
+
+    Attributes
+    ----------
+    original : dict
+        Original collection titles by Arthur Conan Doyle
+    novel : dict
+        Novel collection titles created from dominant words in each topic
+    """
+
+    def __init__(self):
+        pass
+
+    @property
+    def original(self):
+        collection = {
+            0: "His Last Bow",
+            1: "The Adventures of Sherlock Holmes",
+            2: "The Case-Book of Sherlock_Holmes",
+            3: "The Memoirs of Sherlock Holmes",
+            4: "The Return of Sherlock Holmes"
+        }
+
+        return collection
+
+    @property
+    def novel(self):
+        collection = {
+            0: "The Whispering Ways Sherlock Holmes Waits to Act on Waste",
+            1: "Vengeful Wednesdays: Unexpected Incidences on the Tapering Train by Sherlock Holmes",
+            2: "A Private Journey of Sherlock Holmes: Thirteen Unfolded Veins on the Move",
+            3: "Sherlock Holmes Tumbling into the hanging arms of Scylla",
+            4: "The Shooking Jaw of Sherlock Holmes in the Villa of the Baronet"
+        }
+
+        return collection
