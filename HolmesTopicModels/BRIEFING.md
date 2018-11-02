@@ -8,7 +8,7 @@ In this project different approaches to Topic Modeling are compared. [Latent Dir
 
 
 ## Project Goal
-Apply LDA, LSI and NNMF on Sherlock Holmes stories corpus and compare the results. Find a new assignment of stories to collections.
+Apply LDA, LSI and NMF on Sherlock Holmes stories corpus and compare the results. Find a new assignment of stories to collections.
 
 
 ## Metrices
@@ -45,7 +45,7 @@ Project will terminate, if...
 
 ## Technologies
 * Processing => PyData Stack based on Anaconda. Libraries:
-    * `environment.yml`
+    * see `environment.yml`
 * Modeling => scikit-learn
 * IO => Jupyter, Yellowbrick, pyLDAvis
 
@@ -63,8 +63,9 @@ App Testing:
 ## Timetable
 * Start => 23.10.2018
 * Expected finish => 02.11.2018
-* Actual finish => \#TODO
+* Actual finish => 02.11.2018
 
 ## Limitations / Further Improvements
-* Novel collection sequences can be learned by RNN
-* \#TODO
+* Different approaches for the assignment of stories to collections can be used (eg Clustering)
+* Sherlock Holmes novels can be taken into account.
+* Novel collection sequences can be learned by RNN.
