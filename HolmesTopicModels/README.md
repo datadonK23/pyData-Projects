@@ -20,12 +20,13 @@ Comparison of Topic Models: Run Jupyter notebooks located in `holmes_topic_model
     * `__init__.py`
     * `main.py` _(entry point)_
     * `model.py`
+    * `preprocessing.py`
     * `test/` _(test directory)_
         * `__init__.py`
         * `test_main.py`
         * `test_model.py`
+        * `test_preprocessing.py`
     * `notebook/` _(notebooks for exploration & model development)_
-        * `0_Cleaning.ipynb`
         * `1_Exploration.ipynb`
         * `2_Modeling.ipynb`
         * `helpers/`
