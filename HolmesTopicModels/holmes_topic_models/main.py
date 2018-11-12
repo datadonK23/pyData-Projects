@@ -1,7 +1,7 @@
 #!/usr/bin/python
 """ main
 
-#FIXME Description
+NLP Pipeline and Topic Modeling
 
 Author: datadonk23
 Date: 23.10.18 
