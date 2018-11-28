@@ -42,7 +42,6 @@ class TextWrangler(object):
         nltk_stopwords = set(stopwords.words("english"))
         sklearn_stopwords = stop_words.ENGLISH_STOP_WORDS
         custom_stopwords = ["arthur", "conan", "doyle", "chapter", "contents",
-                            "holmes", "watson", "said", "man", "mr",
                             '`--"', "`"]
         self.stopwords = sklearn_stopwords.union(nltk_stopwords).union(
             custom_stopwords)
