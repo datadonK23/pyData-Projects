@@ -58,4 +58,5 @@ Model Testing:
 * Actual finish => FIXME
 
 ## Limitations / Further Improvements
+* Try word2vec instead of BOW
 * FIXME
