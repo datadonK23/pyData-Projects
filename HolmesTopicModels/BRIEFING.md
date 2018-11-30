@@ -66,6 +66,6 @@ App Testing:
 * Actual finish => 02.11.2018
 
 ## Limitations / Further Improvements
-* Different approaches for the assignment of stories to collections can be used (eg Clustering)
+* Different approaches for the assignment of stories to collections can be used (eg Clustering). KMeans approach eventually evaluated  (-> got to HolmesClustering directory in Repo root)
 * Sherlock Holmes novels can be taken into account.
 * Novel collection sequences can be learned by RNN.

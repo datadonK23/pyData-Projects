@@ -50,13 +50,16 @@ Project will terminate, if...
 Model Testing:
 
 * Inspect clusters and examine on conclusivness
+* Use Silhoutte plots to evaluate cluster consistency.
+* Compare average Silhoutte scores for different cluster sizes.
 
 
 ## Timetable
 * Start => 10.11.2018
 * Expected finish => 16.11.2018
-* Actual finish => FIXME
+* Actual finish => 30.11.2018
 
 ## Limitations / Further Improvements
-* Try word2vec instead of BOW
-* FIXME
+* Try word2vec instead of BOW (which means Gensim hassle)
+* Try Hierarchical Clustering.
+* Use Topic Modeling approach (-> got to HolmesTopicModels directory in Repo root)
